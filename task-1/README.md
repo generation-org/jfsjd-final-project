@@ -2,16 +2,23 @@
 
 ## Description
 
-Is always a good practice to design first before start coding. The objective of this task is to create the Task planner app wireframes to understand how it will work and look.
+Is always a good practice to design first before start coding. The objective of this task is to create the application's wireframes to understand how it will work and look.
 
 ## Walkthrough
 
 ### Step 1: 
+
+Select the project of your preference:
+* E-commerce
+* Social Network
+
+### Step 2: 
+
 Create an account on <a href="https://moqups.com/" target="_blank">Moqups</a>
 
-### Step 2: Create your App Wireframes
+### Step 3: Create your App Wireframes
 
-In this step, we'll create the wireframes of your `TaskManager` application. Make sure you read the acceptance criteria on the **results** section before
+In this step, we'll create the wireframes of your the project you selected. Make sure you read the acceptance criteria on the **results** section before
 you start designing. Ask the instructor if you have any questions!
 
 > #### Useful Resources for this step
@@ -29,9 +36,12 @@ you start designing. Ask the instructor if you have any questions!
 
 You should have implemented the different screens of your application, meeting the following **assesment criteria**:
 
-* Contains a Task Form with the required information (Name, Description, AssignedTo, DueDate, Status)
-* Contains a Task Layout (check this Card Layout example) with the required information (Name, Description, AssignedTo, DueDate, Status)
-* Wireframe solves all the UI challenges to represent the Task Planner and a clear view of a Task with the required fields(Name, Description, AssignedTo, DueDate, Stat
+* There should be 5 pages on any of the two project options: 
+  * Main page (Home)  - Static Page with App Presentation
+  * About Us - Static Pages
+  * Products / Posts List - Consumes API (POST and GET)
+  * Login
+  * Form Page (View / Update / Create / Delete)
 
 ## Example
 
