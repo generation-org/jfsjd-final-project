@@ -2,8 +2,8 @@
 
 
 **General Objectives**
-Create a fully working Application with the following layers:
-* Persistence with MySQL
+Implement a fully working web application with the following layers:
+* Persistence: MySQL Database
 * Backend: REST API with Java and Spring Boot Planner
 * Frontend: JavaScript + CSS + HTML
 
