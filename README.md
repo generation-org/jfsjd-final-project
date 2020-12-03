@@ -1,4 +1,4 @@
-# Java Full Stack Jr Developer Program - final-project
+# Java Full Stack Jr Dev - Final Project
 
 
 **General Objectives**
