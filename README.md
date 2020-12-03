@@ -1,1 +1,1 @@
-# jfsjd-final-project
+# Java Full Stack Jr Developer Program - final-project
