@@ -1,95 +1,104 @@
-# Task 6: Adding Tasks
+# Task 4: Model Object List(posts or products)
 
 ## Description
 
-For this task, we'll be creating a class to manage the tasks, adding a method to the class to keep track of tasks in our application, and connecting up the **New Task** form to create tasks.
+For this task, we'll be creating the feature to display the objets list of the selected project:
+* Products List
+* Posts List
 
 ## Walkthrough
 
-### Step 1: The Setup
+### Step 1: Define the item card layout
 
-In this step, we'll re-organise our folder structure in preparation for the next few steps.
+In this step, we'll create the item represantion using [card component](https://getbootstrap.com/docs/4.4/components/card/)
 
-1. Create a `js` folder in your project if one does not already exist
-2. Copy the existing js file into your `js` folder, and rename it to `index.js`
-3. Update the `<script>` tag in your `html` file to use the new location of the `js/index.js` file.
-4.  Create a `taskManager.js` file in the `js` folder
-5. Add a `<script>` tag pointing to the `js/taskManager.js` file _before_ the `<script>` tag pointing to the `js/index.js` file.
+1. Read the documentation and understand how to use the [card components](https://getbootstrap.com/docs/4.4/components/card/)
+2. Add a `div` element with id `list-items` to add your list items dinamically with JavaScript.
+3. Add 3 different sample item cards inside your dive
+> **Expected Result**
+> You should see the items list display correctly
 
-### Step 2: The TaskManager Class
+### Step 2: Add your JavaScript to make it interactive
 
-In this step, we'll create a `TaskManager` class that
-will be responsible for managing the tasks in the application.
+In this step, we'll create a `ItemsController` class that
+will be responsible for adding and removing items to the HTML div with id `list-items`
 
 > #### Useful Resources for this step
-> - [ECMAScript 2015 Classes](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Inheritance#ECMAScript_2015_Classes)
+> - [Introduction to the DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
 
-1. Create a `TaskManager` class in `js/taskManager.js`
-2. Within the `constructor` of the `TaskManager` class, initialize a `this.tasks` property on the class equal to an empty array.
+1. Create a `ItemsController` class in `js/itemsController.js`
+2. Within the `constructor` of the `ItemsController` class, initialize a `this.items` property on the class equal to an empty array.
 
 > #### Test Your Code!
-> Now is a good chance to test your code, head over to `js/index.js` and do the following
+> Now is a good chance to test your code, head over to `js/itemsController.js` and do the following
 >
-> 1. Initialize a new instance of `TaskManager`
-> 2. `console.log()` the `tasks` property
+> 1. Initialize a new instance of `ItemsController`
+> 2. `console.log()` the `items` property
 >
 > **Expected Result**
 > You should see an empty array logged to the browser.
 
-### Step 3: Adding A New Task Programmatically
+### Step 3: Adding A New Item Programmatically
 
-In this step, we'll add a method to the `TaskManager` class that will allow us to add tasks to it's `tasks` property.
+In this step, we'll add a method to the `ItemsController` class that will allow us to add items to the div with id `list-items`.
 
-As part of this process, we're going to create a unique `id` for each task.
+As part of this process, we're going to create a unique `id` for each item.
 
-For each task for have a unique `id`, we will need to keep track of what `id` the latest task was created with, so that we can increment that `id` for the next task.
+For each item for have a unique `id`, we will need to keep track of what `id` the latest task was created with, so that we can increment that `id` for the next task.
 
-For example, pay attention to the two `task` objects below:
+For example, pay attention to the two `items` objects below:
 ```js
-const task1 = {
+const product1 = {
     id: 1,
-    name: 'Take out the trash',
-    description: 'Take out the trash to the front of the house',
-    assignedTo: 'Nick',
-    dueDate: '2020-09-20',
-    status: 'TODO'
+    name: ''Tayto'',
+    description: 'Cheese & Onion Chips',
+    img: 'https://www.irishtimes.com/polopoly_fs/1.4078148!/image/image.jpg'
+    createdAt: '2020-09-20'
 };
 
-const task2 = {
+const post1 = {
     id: 2,
-    name: 'Cook Dinner',
-    description: 'Prepare a healthy serving of pancakes for the family tonight',
-    assignedTo: 'Nick',
-    dueDate: '2020-09-20',
-    status: 'TODO'
+    name: 'My first post',
+    text: 'This is my first post',
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Post-greenland-uummannaq.jpg/1200px-Post-greenland-uummannaq.jpg"
+    author: 'Andres Lowles',
+    createdAt: '2020-09-20'
 };
 ```
 
-Notice how each task has a unique `id`? We will be using this `id` in future steps to keep track of the different tasks. 
+Notice how each item has a unique `id`? We will be using this `id` in future steps to keep track of the different items. 
 
 > #### Useful Resources for this step
 > - [Array.prototype.push()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push)
 
-1. In the `TaskManager`'s `constructor`, accept a `currentId` parameter, with a default value of `0`.
+1. In the `ItemsController`'s `constructor`, accept a `currentId` parameter, with a default value of `0`.
 2. Assign the `currentId` to a new property on the class, `this.currentId`.
-3. Create a method on the class, `addTask`. This method should accept all the nessecary information from the form to create a task as parameters.
+3. Create a method on the class, `addItem`. This method should accept all the nessecary information from the form to create an item as parameters.
+    * Product
     - `name`
     - `description`
-    - `assignedTo`
-    - `dueDate`
-4. Within the `addTask` method, increment the `this.currentId`
-5. `push` a new task into the `this.tasks` array, with the correct properties of the task, using the values passed in as parameters as well as the new `this.currentId`
-    **Note** Make sure to include the `id` and a default `status` of `'TODO'`
+    - `img`
+    - `createdAt`
+    * Post
+    - `name`
+    - `text`
+    - `img`
+    - `author`
+    - `createdAt`
+ 
+4. Within the `addItem` method, increment the `this.currentId`
+5. `push` a new task into the `this.items` array, with the correct properties of the item, using the values passed in as parameters as well as the new `this.currentId`
+    **Note** Make sure to include the `id`
 
 > #### Test Your Code!
-> Now is a good chance to test your code, head over to `js/index.js` and do the following
+> Now is a good chance to test your code, head over to `js/itemsController.js` and do the following
 >
-> 1. Initialize a new instance of `TaskManager`
-> 2. Use the `addTask` method to add a new task
-> 2. `console.log()` the `tasks` property
+> 1. Initialize a new instance of `ItemsController`
+> 2. Use the `addItem` method to add a new item
+> 2. `console.log()` the `items` property
 >
 > **Expected Result**
-> You should see an array containing the added task logged to the browser.
+> You should see an array containing the added item logged to the browser.
 
 ### Step 4: Adding Tasks With The Form
 
