@@ -10,7 +10,7 @@ For this task, we'll be creating the feature to display the objets list of the s
 
 ### Step 1: Define the item card layout
 
-In this step, we'll create the item represantion using [card component](https://getbootstrap.com/docs/4.4/components/card/)
+In this step, we'll create the item represantion using the [card component](https://getbootstrap.com/docs/4.4/components/card/)
 
 1. Read the documentation and understand how to use the [card components](https://getbootstrap.com/docs/4.4/components/card/)
 2. Add a `div` element with id `list-items` to add your list items dinamically with JavaScript.
