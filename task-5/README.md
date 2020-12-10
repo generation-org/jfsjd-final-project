@@ -1,20 +1,22 @@
-# Task 6: Adding Tasks
+# Task 5: Displaying Items List(posts or products)
 
 ## Description
 
-For this task, we'll be creating a class to manage the tasks, adding a method to the class to keep track of tasks in our application, and connecting up the **New Task** form to create tasks.
+For this task, we'll be creating the feature to display the objets list of the selected project:
+* Products List
+* Posts List
 
 ## Walkthrough
 
-### Step 1: The Setup
+### Step 1: Define the item card layout
 
-In this step, we'll re-organise our folder structure in preparation for the next few steps.
+In this step, we'll create the item represantion using [card component](https://getbootstrap.com/docs/4.4/components/card/)
 
-1. Create a `js` folder in your project if one does not already exist
-2. Copy the existing js file into your `js` folder, and rename it to `index.js`
-3. Update the `<script>` tag in your `html` file to use the new location of the `js/index.js` file.
-4.  Create a `taskManager.js` file in the `js` folder
-5. Add a `<script>` tag pointing to the `js/taskManager.js` file _before_ the `<script>` tag pointing to the `js/index.js` file.
+1. Read the documentation and understand how to use the [card components](https://getbootstrap.com/docs/4.4/components/card/)
+2. Add a `div` element with id `list-items` to add your list items dinamically with JavaScript.
+3. Add 3 different sample item cards inside your dive
+> **Expected Result**
+> You should see the items list display correctly
 
 ### Step 2: The TaskManager Class
 
