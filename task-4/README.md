@@ -1,30 +1,28 @@
-# Task 4: Model Object List(posts or products)
+# Task 4: Adding Items(posts or products)
 
 ## Description
 
-For this task, we'll be creating the feature to display the objets list of the selected project:
-* Products List
-* Posts List
+For this task, we'll be creating a class to manage the items(products or posts), adding a method to the class to keep track of items in our application, and connecting up the New Item form to create items(products or posts).
 
 ## Walkthrough
 
-### Step 1: Define the item card layout
+### Step 1: The Setup
 
-In this step, we'll create the item represantion using [card component](https://getbootstrap.com/docs/4.4/components/card/)
+In this step, we'll re-organise our folder structure in preparation for the next few steps.
 
-1. Read the documentation and understand how to use the [card components](https://getbootstrap.com/docs/4.4/components/card/)
-2. Add a `div` element with id `list-items` to add your list items dinamically with JavaScript.
-3. Add 3 different sample item cards inside your dive
-> **Expected Result**
-> You should see the items list display correctly
+1. Create a `js` folder in your project if one does not already exist
+2. Copy the existing js file into your `js` folder, and rename it to `index.js`
+3. Update the `<script>` tag in your `html` file to use the new location of the `js/index.js` file.
+4.  Create a `itemsController.js` file in the `js` folder
+5. Add a `<script>` tag pointing to the `js/itemsController.js` file _before_ the `<script>` tag pointing to the `js/index.js` file.
 
-### Step 2: Add your JavaScript to make it interactive
+### Step 2: The ItemsController Class
 
 In this step, we'll create a `ItemsController` class that
-will be responsible for adding and removing items to the HTML div with id `list-items`
+will be responsible for managing the items(posts or products) in the application.
 
 > #### Useful Resources for this step
-> - [Introduction to the DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
+> - [ECMAScript 2015 Classes](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Inheritance#ECMAScript_2015_Classes)
 
 1. Create a `ItemsController` class in `js/itemsController.js`
 2. Within the `constructor` of the `ItemsController` class, initialize a `this.items` property on the class equal to an empty array.
@@ -100,28 +98,28 @@ Notice how each item has a unique `id`? We will be using this `id` in future ste
 > **Expected Result**
 > You should see an array containing the added item logged to the browser.
 
-### Step 4: Adding Tasks With The Form
+### Step 4: Adding Items With The Form
 
-In this final step, we will use the `TaskManager` class to keep track of tasks we add with the **New Task** form.
+In this final step, we will use the `ItemsController` class to keep track of items we add with the **New Item** form.
 
-**Note**: For now, if your **New Task** form is on a seperate page to your **Task List**, copy it over to your **Task List** so it's all on the one page.
+**Note**: For now, if your **New Item** form is on a seperate page to your **Items List**, copy it over to your **Items List** so it's all on the one page.
 
 > #### Useful Resources for this step
 > - [Document.querySelector()](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)
 > - [EventTarget.addEventListener()](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
 > - [Event Reference](https://developer.mozilla.org/en-US/docs/Web/Events)
 
-1. Make sure a new `TaskManager` is initialized near the top of the file.
-2. In `index.js`, add an event listener to the **New Task** form, listening to the `submit` event. If there is already an event listener used for validation, use that one.
-3. When the `submit` event fires, if validation of the form is successful, use the values of each `input` in the form to call the `taskManager`'s `addTask` method.
+1. Make sure a new `ItemsController` is initialized near the top of the file.
+2. In `index.js`, add an event listener to the **New Item** form, listening to the `submit` event. If there is already an event listener used for validation, use that one.
+3. When the `submit` event fires, if validation of the form is successful, use the values of each `input` in the form to call the `itemsController`'s `addItem` method.
     - **Note**: Make sure to prevent the default action of the form!
 4. Clear the values from each form input, ready for the next submission.
 
 ## Results
 
-We've now set up the `TaskManager` class, created an `addTask` and hooked it up to our **New Task** form!
+We've now set up the `ItemsController` class, created an `addItem` and hooked it up to our **New Item** form!
 
-Test out your code by adding some tasks using the **New Task** form, and checking the `TaskManager` instance's `tasks` array for the tasks.
+Test out your code by adding some items using the **New Item** form, and checking the `ItemsController` instance's `items` array for the tasks.
 
 ## Example
 
