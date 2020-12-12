@@ -18,8 +18,10 @@ In this step, we'll re-organise our folder structure in preparation for the next
 
 ### Step 2: The ItemsController Class
 
-In this step, we'll create a `ItemsController` class that
-will be responsible for managing the items(posts or products) in the application.
+In this step, we'll create a `ItemsController` class that 
+will be responsible for managing the items(posts or products) in the application. Always aim to use meaningful and long names to make your code more readable. We encourage you to replace the word `Items` with a more meaninfull one depending on your project domian:
+* PostsController
+* ProductsController
 
 > #### Useful Resources for this step
 > - [ECMAScript 2015 Classes](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Inheritance#ECMAScript_2015_Classes)
