@@ -10,8 +10,8 @@ newItemForm.addEventListener('submit', (event) => {
     event.preventDefault();
 
     // Select the inputs
-    const newItemNameInput = document.querySelector('#newTaskNameInput');
-    const newItemDescription = document.querySelector('#newTaskDescription');
+    const newItemNameInput = document.querySelector('#newItemNameInput');
+    const newItemDescription = document.querySelector('#newItemDescription');
 
     /*
         Validation code here
@@ -23,7 +23,7 @@ newItemForm.addEventListener('submit', (event) => {
     const createdAt = new Date();
 
     // Add the task to the task manager
-    itemsController.addTask(name, description, createdAt);
+    itemsController.addItem(name, description, createdAt);
 
     // Clear the form
     newItemNameInput.value = '';
