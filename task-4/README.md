@@ -108,7 +108,7 @@ Notice how each item has a unique `id`? We will be using this `id` in future ste
     - `createdAt`
  
 4. Within the `addItem` method, increment the `this.currentId`
-5. `push` a new task into the `this.items` array, with the correct properties of the item, using the values passed in as parameters as well as the new `this.currentId`
+5. `push` a new item into the `this.items` array, with the correct properties of the item, using the values passed in as parameters as well as the new `this.currentId`
     **Note** Make sure to include the `id`
 
 > #### Test Your Code!
