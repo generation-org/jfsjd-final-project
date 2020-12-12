@@ -40,14 +40,16 @@ will be responsible for managing the items(posts or products) in the application
 
 ### Step 3: Adding A New Item Programmatically
 
-In this step, we'll add a method to the `ItemsController` class that will allow us to add items to the div with id `list-items`.
+In this step, we'll add a method to the `ItemsController` class that will allow us to add new items to array.
 
 As part of this process, we're going to create a unique `id` for each item.
 
-For each item for have a unique `id`, we will need to keep track of what `id` the latest task was created with, so that we can increment that `id` for the next task.
+For each item to have a unique `id`, we will need to keep track of what `id` the latest task was created with, so that we can increment that `id` for the next item.
 
 For example, pay attention to the two `items` objects below:
 ```js
+
+//E-commerce project
 const product1 = {
     id: 1,
     name: ''Tayto'',
@@ -56,10 +58,29 @@ const product1 = {
     createdAt: '2020-09-20'
 };
 
-const post1 = {
+const product2 = {
     id: 2,
+    name: ''Water'',
+    description: 'Mineral water',
+    img: 'http://www.mazalv.com/wp-content/uploads/2016/11/Bottled-Water1-979x1024-1-979x1024.png'
+    createdAt: '2020-09-20'
+};
+
+
+//Social Media project
+const post1 = {
+    id: 1,
     name: 'My first post',
     text: 'This is my first post',
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Post-greenland-uummannaq.jpg/1200px-Post-greenland-uummannaq.jpg"
+    author: 'Andres Lowles',
+    createdAt: '2020-09-20'
+};
+
+const post2 = {
+    id: 2,
+    name: 'My second post',
+    text: 'This is my second post',
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Post-greenland-uummannaq.jpg/1200px-Post-greenland-uummannaq.jpg"
     author: 'Andres Lowles',
     createdAt: '2020-09-20'
