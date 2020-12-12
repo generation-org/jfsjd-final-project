@@ -15,34 +15,31 @@
 
 <body>
     <div class="container">
-        <h1 class="my-5">Task List</h1>
+        <h1 class="my-5">New Item</h1>
         <div class="row">
             <div class="col">
-                <h2>New Task</h2>
-                <form id="newTaskForm">
+                <h2>New Item</h2>
+                <form id="newItemForm">
                     <div class="form-group">
-                        <label for="newTaskNameInput">Name</label>
-                        <input type="text" class="form-control" id="newTaskNameInput">
+                        <label for="newItemNameInput">Name</label>
+                        <input type="text" class="form-control" id="newItemNameInput">
                     </div>
                     <div class="form-group">
-                        <label for="newTaskDescription">Description</label>
-                        <textarea type="text" class="form-control" id="newTaskDescription"></textarea>
+                        <label for="newItemDescription">Description</label>
+                        <textarea type="text" class="form-control" id="newItemDescription"></textarea>
                     </div>
-                    <div class="form-row">
-                        <div class="form-group col">
-                            <label for="newTaskAssignedTo">Assigned To</label>
-                            <input type="text" class="form-control" id="newTaskAssignedTo">
-                        </div>
-                        <div class="form-group col">
-                            <label for="newTaskDueDate">Due Date</label>
-                            <input type="date" class="form-control" id="newTaskDueDate">
-                        </div>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-block">Add Task</button>
+                 
+                    <button type="submit" class="btn btn-primary btn-block">Add Item</button>
                 </form>
             </div>
         </div>
+        
     </div>
+    <br/>
+    <br/>
+    <div class="container">
+        <div id="list-items"></div>
+        </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -54,7 +51,7 @@
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
 
-    <script src="js/TaskManager.js"></script>
+    <script src="js/itemsController.js"></script>
     <script src="js/index.js"></script>
 </body>
 
