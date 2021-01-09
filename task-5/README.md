@@ -27,7 +27,7 @@ will be responsible for adding new items to list.
 > #### Useful Resources for this step
 > - [Document.getElementById()](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById)
 
-1. Define a function the `addItemCard(item)` inside your in `js/index.js`
+1. Define a function called `addItemCard(item)` inside your in `js/items.js`
 2. Write the code so your function can create the same HTML structure of your item card representation replacing the item information.
 
 > #### Test Your Code!
@@ -39,17 +39,43 @@ will be responsible for adding new items to list.
 > **Expected Result**
 > You should see a new item card added to the DOM.
 
-### Step 3: Connecting your ItemsController with the FrontEnd
+### Step 3: Store and read Items from the LocalStorage
 
-In this step, we'll connect the `ItemsController` class with the `addItemCard(item)` so when you create a new item is also displayed in the HTML items list.
+In this step, we'll connect the `ItemsController` class and `items.js` with the local storage to persist your items data.
 
-1. Modify the `newItemForm.addEventListener` so the implemented function `addItemCard(item)` is also called when a new items is created from the **New Item** form.
+1. Modify the `items.js` adding a new function to save sample items data in the local storage. Use the following JSON structure as 
+reference and make sure you save the data as a String.
+
+```javascript
+
+        const sampleItems = [{'name':'juice',
+        'img':'https://www.gs1india.org/media/Juice_pack.jpg',
+        'description':'Orange and Apple juice fresh and delicious'},
+        {'name':'Tayto',
+        'img':'https://www.irishtimes.com/polopoly_fs/1.4078148!/image/image.jpg',
+        'description':'Cheese & Onion Chips'}];
+        localStorage.setItem("items", JSON.stringify(sampleItems));
+```
+
+2. Modify the `ItemsController` so it loads the data from the storage implementing a new function `items.js` 
+
+```javascript
+    loadItemsFromLocalStorage() {
+        const storageItems = localStorage.getItem("items")
+        if (storageItems) {
+            const items = JSON.parse(storageItems)
+            //TODO load the items into the local items structure (this.items)           
+        }
+    }
+```
+
+3. Implement a new funciton in the `items.js` that loads the items from the `ItemsController` using the function you already implemented `addItemCard(item)`.
 
 ## Results
 
-We've now implemented up the `addItemCard(item)` and connected to the `ItemsController`.
+We've now implemented a basic version of your App that persist the data on the local storage.
 
-Test out your code by adding some items using the **New Item** form, and checking the items are displayed correctly.
+Test out your code by calling the funciton that loads the data from the local storage and verify the items are displayed correctly.
 
 ## Example
 

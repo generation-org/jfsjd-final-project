@@ -10,36 +10,17 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-    <title>Task List</title>
+    <title>Items List</title>
 </head>
 
 <body>
     <div class="container">
-        <h1 class="my-5">New Item</h1>
-        <div class="row">
-            <div class="col">
-                <h2>New Item</h2>
-                <form id="newItemForm">
-                    <div class="form-group">
-                        <label for="newItemNameInput">Name</label>
-                        <input type="text" class="form-control" id="newItemNameInput">
-                    </div>
-                    <div class="form-group">
-                        <label for="newItemDescription">Description</label>
-                        <textarea type="text" class="form-control" id="newItemDescription"></textarea>
-                    </div>
-                 
-                    <button type="submit" class="btn btn-primary btn-block">Add Item</button>
-                </form>
-            </div>
-        </div>
+        <h1 class="my-5">Items List</h1>
+        <div id="list-items"></div>
         
     </div>
-    <br/>
-    <br/>
-    <div class="container">
-        <div id="list-items"></div>
-        </div>
+
+
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -52,7 +33,7 @@
         crossorigin="anonymous"></script>
 
     <script src="js/itemsController.js"></script>
-    <script src="js/index.js"></script>
+    <script src="js/items.js"></script>
 </body>
 
 </html>
