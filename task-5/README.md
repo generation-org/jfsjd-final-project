@@ -44,7 +44,7 @@ will be responsible for adding new items to list.
 In this step, we'll connect the `ItemsController` class and `items.js` with the local storage to persist your items data.
 
 1. Modify the `items.js` adding a new function to save sample items data in the local storage. Use the following JSON structure as 
-reference and make sure you save the data as a String.
+reference(make sure you save the data as a String).
 
 ```javascript
 
