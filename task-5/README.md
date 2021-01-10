@@ -17,21 +17,21 @@ In this step, we'll create the item represantation using the [card component](ht
 3. Add a `div` element with id `list-items` to add your list items dinamically with JavaScript. 
 4. Add 3 different sample item cards inside your `div` element.
 > **Expected Result**
-> You should see the items list display correctly
+> You should see the items list displayed correctly
 
 ### Step 2: Adding your items cards programmatically ItemsManager Class
 
 In this step, we'll create a function `addItemCard(item)` that
-will be responsible for adding new items to list.
+will be responsible for adding new items to the list.
 
 > #### Useful Resources for this step
 > - [Document.getElementById()](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById)
 
 1. Define a function called `addItemCard(item)` inside your in `js/items.js`
-2. Write the code so your function can create the same HTML structure of your item card representation replacing the item information.
+2. Write the code so your function can create the same HTML structure of your item card representation replacing the item's information.
 
 > #### Test Your Code!
-> Now is a good chance to test your code, head over to you HTML page and open it on the browser
+> Now is a good chance to test your code, head over to you HTML page and open it on the browser:
 >
 > 1. Open the console from the Developer Tools. 
 > 2. Excecute the `addItemCard(item)` function from the console
@@ -71,11 +71,13 @@ reference(make sure you save the data as a String).
 
 3. Implement a new funciton in the `items.js` that loads the items from the `ItemsController` using the function you already implemented `addItemCard(item)`.
 
+4. Modify the `items.js` so it calls the `loadItemsFromLocalStorage()` and then iterate the `ItemsController.items` list to load the items into your the `items.html` page using the function implemented before  `addItemCard(item)`
+
 ## Results
 
 We've now implemented a basic version of your App that persist the data on the local storage.
 
-Test out your code by calling the funciton that loads the data from the local storage and verify the items are displayed correctly.
+Test out your code by calling the funciton that loads the data from the local storage and verify the items are displayed correctly. You can also use the developer tools and navigate to the Application tab to verify that the items are saved in the local storage.
 
 ## Example
 
