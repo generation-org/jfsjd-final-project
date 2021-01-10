@@ -3,8 +3,8 @@ const itemsController = new ItemsController(0);
 
 
 function addItemCard(item){
-    const itemHTML = '<div class="card">\n' +
-        '    <img src="'+item.img +'" class="card-img-top" alt="image">\n' +
+    const itemHTML = '<div class="card" style="width: 20rem;">\n' +
+        '    <img src="'+item.img +'" width="300" height="250"  alt="product image">\n' +
         '    <div class="card-body">\n' +
         '        <h5 class="card-title">'+item.name+'</h5>\n' +
         '        <p class="card-text">'+item.description+'</p>\n' +
@@ -21,9 +21,9 @@ function loadStorageSampleData(){
         const sampleItems = [{'name':'juice',
         'img':'https://www.gs1india.org/media/Juice_pack.jpg',
         'description':'Orange and Apple juice fresh and delicious'},
-        {'name':'Tayto',
-        'img':'https://www.irishtimes.com/polopoly_fs/1.4078148!/image/image.jpg',
-        'description':'Cheese & Onion Chips'}];
+        {'name':'Ruffles Chicken',
+        'img':'https://s3-ap-southeast-1.amazonaws.com/www8.fairprice.com.sg/fpol/media/images/product/XL/13086598_LXL1.jpg',
+        'description':'Ruffles Potato Chips - Chicken'}];
         localStorage.setItem("items", JSON.stringify(sampleItems));
     }
 }
