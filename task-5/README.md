@@ -19,7 +19,7 @@ In this step, we'll create the item represantation using the [card component](ht
 > **Expected Result**
 > You should see the items list displayed correctly
 
-### Step 2: Adding your items cards programmatically ItemsManager Class
+### Step 2: Adding your items cards programmatically
 
 In this step, we'll create a function `addItemCard(item)` that
 will be responsible for adding new items to the list.

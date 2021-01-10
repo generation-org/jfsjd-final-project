@@ -35,18 +35,24 @@
       </nav>
 
     <div class="jumbotron">
-        <h1 class="display-4">Item Form</h1>
-        <form>
-            <div class="form-group">
-              <label for="formGroupExampleInput">Example label</label>
-              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
-            </div>
-            <div class="form-group">
-              <label for="formGroupExampleInput2">Another label</label>
-              <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
-            </div>
-            <button type="button" class="btn btn-primary">Save</button>
-          </form>
+        <h1 class="display-4">New Item</h1>
+        <form id="newItemForm">
+          <div class="form-group">
+              <label for="newItemNameInput">Name</label>
+              <input type="text" class="form-control" id="newItemNameInput">
+          </div>
+          <div class="form-group">
+              <label for="newItemkDescription">Description</label>
+              <textarea type="text" class="form-control" id="newItemkDescription"></textarea>
+          </div>
+          
+          <div class="form-group">
+              <label for="newItemImageUrl">Image URL</label>
+              <input type="text" class="form-control" id="newItemImageUrl">
+          </div>                    
+          
+          <button type="submit" class="btn btn-primary btn-block">Save Item</button>
+      </form>
     </div>
 
    

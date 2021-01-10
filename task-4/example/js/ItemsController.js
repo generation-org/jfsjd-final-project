@@ -1,22 +1,22 @@
 // Create a ItemsController class
 class ItemsController {
-    // Set up the tasks and currentId property in the contructor
+    // Set up the items and currentId property in the contructor
     constructor(currentId = 0) {
         this.items = [];
         this.currentId = currentId;
     }
 
-    // Create the addTask method
-    addItem(name, description,createdAt) {
+    // Create the addItem method
+    addItem(name, description,imageUrl) {
         const item = {
             // Increment the currentId property
             id: this.currentId++,
             name: name,
             description: description,
-            createdAt: createdAt
+            imageUrl: imageUrl
         };
 
-        // Push the task to the tasks property
+        // Push the item to the items property
         this.items.push(item);
     }
 }
