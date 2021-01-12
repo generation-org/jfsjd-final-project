@@ -24,12 +24,12 @@ In this step, we will use the `ItemsController` class to keep track of items we 
 2. In `item-form.js`, add an event listener to the **New Item** form, listening to the `submit` event. If there is already an event listener used for validation, use that one.
 3. When the `submit` event fires, if validation of the form is successful, use the values of each `input` in the form to call the `itemsController`'s `addItem` method.
     - **Note**: Make sure to prevent the default action of the form!
-4. Update the items list on the local storage so the data is also reflected on the `items.html`.
+4. Update the items list in local storage so the data is also reflected on the `items.html`.
 4. Clear the values from each form input, ready for the next submission.
 
 ## Results
 
-We've now set up the `ItemsController` class, used an `addItem` and hooked it up to our **New Item** form!
+We've now set up the `ItemsController` class, used `addItem` and hooked it up to our **New Item** form!
 
 Test out your code by adding some items using the **New Item** form, and checking the `ItemsController` instance's `items` array for the items.
 
