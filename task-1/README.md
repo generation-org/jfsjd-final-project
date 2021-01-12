@@ -2,7 +2,7 @@
 
 ## Description
 
-Is always a good practice to design first before start coding. The objective of this task is to create the application's wireframes to understand how it will work and look.
+Is always a good practice to design first before coding. The objective of this task is to design the application's wireframes so that you will have a better understanding of how the application will work and look.
 
 ## Walkthrough
 
@@ -16,7 +16,7 @@ Select the project of your preference:
 
 Create an account on <a href="https://moqups.com/" target="_blank">Moqups</a>
 
-### Step 3: Create your App Wireframes
+### Step 3: Create your App Wireframes!
 
 In this step, we'll create the wireframes of your the project you selected. Make sure you read the acceptance criteria on the **results** section before
 you start designing. Ask the instructor if you have any questions!
@@ -36,7 +36,7 @@ you start designing. Ask the instructor if you have any questions!
 
 You should have implemented the different screens of your application, meeting the following **assesment criteria**:
 
-* There should be 5 pages on any of the two project options: 
+* There should be at minimum 5 pages: 
   * Main page (Home)  - Static Page with App Presentation
   * About Us - Static Pages
   * Products / Posts List - Consumes API (POST and GET)
