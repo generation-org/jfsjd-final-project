@@ -2,7 +2,10 @@
 
 ## Description
 
-For this task, we'll be creating a class to manage the items(products or posts), adding a method to the class to keep track of items in our application, and connecting up the New Item form to create items(products or posts).
+For this task, we'll be
+1. Creating a class to manage the items (products or posts)
+2. Adding a method to the class to keep track of items in our application
+3. Connecting up the New Item form to create items (products or posts).
 
 ## Walkthrough
 
@@ -13,13 +16,15 @@ In this step, we'll re-organise our folder structure in preparation for the next
 1. Create a `js` folder in your project if one does not already exist
 2. Copy the existing js file into your `js` folder, and rename it to `index.js`
 3. Update the `<script>` tag in your `html` file to use the new location of the `js/index.js` file.
-4.  Create a `itemsController.js` file in the `js` folder
+4. Create a `itemsController.js` file in the `js` folder
 5. Add a `<script>` tag pointing to the `js/itemsController.js` file _before_ the `<script>` tag pointing to the `js/index.js` file.
 
 ### Step 2: The ItemsController Class
 
 In this step, we'll create a `ItemsController` class that 
-will be responsible for managing the items(posts or products) in the application. Always aim to use meaningful and long names to make your code more readable. We encourage you to replace the word `Items` with a more meaninfull one depending on your project domian:
+will be responsible for managing the items(posts or products) in the application.
+
+Always aim to use meaningful and long names to make your code more readable. We encourage you to replace the word `Items` with a more meaninful one depending on your project domian:
 * PostsController
 * ProductsController
 
@@ -125,7 +130,7 @@ Notice how each item has a unique `id`? We will be using this `id` in future ste
 
 In this final step, we will use the `ItemsController` class to keep track of items we add with the **New Item** form.
 
-**Note**: For now, if your **New Item** form is on a seperate page to your **Items List**, copy it over to your **Items List** so it's all on the one page.
+**Note**: For now, if your **New Item** form is on a separate page to your **Items List**, copy it over to your **Items List** so it's all on the one page.
 
 > #### Useful Resources for this step
 > - [Document.querySelector()](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)
@@ -140,7 +145,7 @@ In this final step, we will use the `ItemsController` class to keep track of ite
 
 ## Results
 
-We've now set up the `ItemsController` class, created an `addItem` and hooked it up to our **New Item** form!
+We've now set up the `ItemsController` class, create an `addItem` and hooked it up to our **New Item** form!
 
 Test out your code by adding some items using the **New Item** form, and checking the `ItemsController` instance's `items` array for the tasks.
 
