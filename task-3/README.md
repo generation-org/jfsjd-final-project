@@ -3,8 +3,7 @@
 ## Description
 
 Create the basic structure for the project with the navigation working:
-* Application views on separate HTML pages
-* Create a repository for your Front-End code (HTML + CSS + JavaScript )
+* All application views with separate HTML pages are set up. 
 
 
 > #### Tools
