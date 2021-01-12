@@ -1,4 +1,4 @@
-# Task 3: Basic Structure - Front-End with Bootstrap
+# Task 3: Basic Structure + Navigation - Front-End with Bootstrap
 
 ## Description
 
@@ -16,7 +16,7 @@ Create the basic structure for the project with the navigation working:
 
 ### Step 1: Implement the home page
 
-In this step, we'll create a basic HTML structure and include [Bootstrap](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
+In this step, we'll create a basic HTML structure for the home page which includes [Bootstrap](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
 
 1. Create a new file called `index.html` inside your project folder.
 2. Include your `styles.css` file inside the `index.html` page.
