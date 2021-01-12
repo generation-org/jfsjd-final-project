@@ -2,7 +2,7 @@
 
 ## Description
 
-For this task, we'll be creating the feature to display the objets list of the selected project:
+For this task, we'll be creating the feature to display the objects list of the selected project:
 * Products List
 * Posts List
 
@@ -14,7 +14,7 @@ In this step, we'll create the item represantation using the [card component](ht
 
 1. Read the documentation and understand how to use the [card components](https://getbootstrap.com/docs/4.4/components/card/)
 2. Define the HTML structure of the item card representation.
-3. Add a `div` element with id `list-items` to add your list items dinamically with JavaScript. 
+3. Add a `div` element with id `list-items` to add your list items dynamically with JavaScript. 
 4. Add 3 different sample item cards inside your `div` element.
 > **Expected Result**
 > You should see the items list displayed correctly
@@ -69,13 +69,13 @@ reference(make sure you save the data as a String).
     }
 ```
 
-3. Implement a new funciton in the `items.js` that loads the items from the `ItemsController` using the function you already implemented `addItemCard(item)`.
+3. Implement a new function in the `items.js` that loads the items from the `ItemsController` using the function you already implemented `addItemCard(item)`.
 
-4. Modify the `items.js` so it calls the `loadItemsFromLocalStorage()` and then iterate the `ItemsController.items` list to load the items into your the `items.html` page using the function implemented before  `addItemCard(item)`
+4. Modify the `items.js` so it calls the `loadItemsFromLocalStorage()` and then iterate the `ItemsController.items` list to load the items into your  `items.html` page using the function implemented from  `addItemCard(item)`
 
 ## Results
 
-We've now implemented a basic version of your App that persist the data on the local storage.
+We've now implemented a basic version of your application that persist the data on the local storage.
 
 Test out your code by calling the funciton that loads the data from the local storage and verify the items are displayed correctly. You can also use the developer tools and navigate to the Application tab to verify that the items are saved in the local storage.
 
