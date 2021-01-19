@@ -46,7 +46,7 @@ In this step, we'll connect the Spring Boot project with the MySQL database crea
        mysql> grant all on itemsdb.* to 'admin'@'%'; -- Gives all privileges to the new user on the newly created database
    ```
 
-2. Create a resource file called src/main/resources/application.properties, as the following:
+2. Add the following properties to the src/main/resources/application.properties:
 
    ```yaml
    spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
