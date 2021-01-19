@@ -15,7 +15,7 @@ For this task, we'll implement the backend of our web application using Spring B
 In this step, we'll generate a Spring Boot project using the [spring initializr](https://start.spring.io/)
 
 1. Go to the [spring initializr](https://start.spring.io/) and generate a new project with the following configuration:
-   - Project: Gragle Project
+   - Project: Gradle Project
    - Language: Java
    - Dependencies: Spring Web and Spring Data JPA (SQL)
    - Project Metadata: use meaningful names that describe your project, use Jar for packaging and select the Java version installed on your computer.
@@ -25,7 +25,7 @@ In this step, we'll generate a Spring Boot project using the [spring initializr]
 
 > #### Test Your Code!
 >
-> Now is a good chance to test your code, open your project on the Java IDE and run the main class on the Application class.
+> Now is a good chance to test your code, open your project on the Java IDE and run the main class within your Application class.
 >
 > **Expected Result**
 > You should see the server is started correctly and no error is shown on the console.
