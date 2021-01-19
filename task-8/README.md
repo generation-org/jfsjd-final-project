@@ -1,4 +1,4 @@
-# Task 8: Backend with Srping Boot: Database Connection with Spring Data JPA
+# Task 8:Database Connection with Spring Data JPA
 
 ## Description
 
