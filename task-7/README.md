@@ -80,10 +80,6 @@ In this step, we'll create the database Schema on your local instance of MySQL d
 > **Expected Result**
 > You should see the schma created with the tables defined on EER Diagram
 
-## Example
-
-Stuck? Check out the provided example in the [example/](example/) folder
-
 
 
 
