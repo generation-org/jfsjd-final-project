@@ -20,6 +20,10 @@ public class Item
 
     private String imageUrl;
 
+    public Item()
+    {
+    }
+
     public Integer getId()
     {
         return id;

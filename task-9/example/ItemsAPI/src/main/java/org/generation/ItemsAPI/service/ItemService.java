@@ -1,4 +1,4 @@
-package org.generation.ItemsAPI.controller.service;
+package org.generation.ItemsAPI.service;
 
 import org.generation.ItemsAPI.repository.entity.Item;
 
@@ -9,7 +9,7 @@ public interface ItemService
 
     Item save( Item item );
 
-    boolean delete( int itemId );
+    void delete( int itemId );
 
     List<Item> all();
 
