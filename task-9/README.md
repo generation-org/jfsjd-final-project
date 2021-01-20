@@ -1,33 +1,48 @@
-# Task 9: Persisting Tasks to LocalStorage
+# Task 9: Implementing the REST API
 
 ## Description
 
-In this task, we'll _persist_ (ie: save) our tasks to LocalStorage, so that we can load them again the next time we visit our page.
+In this task, we'll implement our REST API so you can perfomr the CRUD(Create, Read, Update and Delete) operations
+over your data model using the HTTP protocol.
 
 ## Walkthrough
 
-### Step 1: Adding the save method to TaskManager
+### Step 1: Implementing your Items Service
 
 > #### Useful Resources for this step
-> - [Using the Web Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API)
-> - [JSON.stringify()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify)
-> - [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+>
+> - [Spring Beans and Dependency Injection](https://docs.spring.io/spring-boot/docs/2.0.x/reference/html/using-boot-spring-beans-and-dependency-injection.html)
 
-In this step, we'll add a `save()` method to our TaskManager, that we can call to save the current `this.tasks` to localStorage. We also need to save the `currentId` of the task we're working on, so that any new tasks after the application has loaded can continue off the `currentId`.
+In this step, we'll define our Service interface and create an implentation that handles the interaction with MySQL Database. An interface is a contract that good software developers use to define a component's behavior without worrying about the implementation.
 
-Because `localStorage` can only store strings, we need a way to convert our `this.tasks` array to a string, that can also be converted _back_ to an array when we load the tasks. For this, we'll be using [JSON.stringify](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify), which we can [JSON.parse](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse) later on to convert back to an array.
+1. Create a new package in your Spring Boot project called `service`
+2. Create a the `ItemService` interface with the functions needed to implement the Items CRUD:
 
-Also, since our `currentId` is a number, we'll need to convert that to a string too.
+   ```java
+        public interface ItemService
+        {
 
-1. In `js/taskManager.js`, in the `TaskManager` class, create a `save` method. This method doesn't require any parameters.
-2. In the `save` method, create a JSON string of the tasks using `JSON.stringify()` and store it to a new variable, `tasksJson`.
-3. Store the JSON string in `localStorage` under the key `tasks` using `localStorage.setItem()`.
-4. Convert the `this.currentId` to a string and store it in a new variable, `currentId`.
-5. Store the `currentId` variable in `localStorage` under the key `currentId` using `localStorage.setItem()`.
-4. In `js/index.js`, after both adding a new task and updating a task's status to done, call `taskManager.save()` to save the tasks to `localSorage`.
+            Item save( Item item );
+
+            boolean delete( int itemId );
+
+            List<Item> all();
+
+            Item findById( int itemId );
+
+        }
+   ```
+
+3. In the `save` method, create a JSON string of the tasks using `JSON.stringify()` and store it to a new variable, `tasksJson`.
+4. Store the JSON string in `localStorage` under the key `tasks` using `localStorage.setItem()`.
+5. Convert the `this.currentId` to a string and store it in a new variable, `currentId`.
+6. Store the `currentId` variable in `localStorage` under the key `currentId` using `localStorage.setItem()`.
+7. In `js/index.js`, after both adding a new task and updating a task's status to done, call `taskManager.save()` to save the tasks to `localSorage`.
 
 > #### Test Your Code!
+>
 > Now is a good chance to test your code, follow the steps below:
+>
 > 1. Open `index.html` in the browser and create a new task using the form.
 > 2. Open the developer tools and navigate to the `Application` tab.
 > 3. In the sidebar, under `Storage`, expand `Local Storage` and select `file://`
@@ -39,6 +54,7 @@ Also, since our `currentId` is a number, we'll need to convert that to a string 
 ### Step 2: Adding the load method to TaskManager
 
 > #### Useful Resources for this step
+>
 > - [Using the Web Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API)
 > - [JSON.parse](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse)
 
@@ -59,7 +75,7 @@ We'll also be converting the `currentId` number we converted as a string, back t
 
 ## Results
 
-Open up `index.html` and add a task. Now, when you re-visit the page (eg: close and open or refresh), you should see the previously created task loaded and rendered to the page! 
+Open up `index.html` and add a task. Now, when you re-visit the page (eg: close and open or refresh), you should see the previously created task loaded and rendered to the page!
 
 Also, since we saved the `currentId`, any _new_ task we create should use the next `currentId`, after the one stored in `localStorage`.
 
