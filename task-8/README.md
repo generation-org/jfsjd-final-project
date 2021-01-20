@@ -147,9 +147,9 @@ In this step, we'll connect the Spring Boot project with the MySQL database crea
     import org.generation.ItemsAPI.repository.entity.Item;
     import org.springframework.data.repository.CrudRepository;
 
-    // This will be AUTO IMPLEMENTED by Spring into a Bean called userRepository
+    // This will be AUTO IMPLEMENTED by Spring into a Bean called itemRepository
     // CRUD refers Create, Read, Update, Delete
-    public interface ItemsRepository extends CrudRepository<Item, Integer>
+    public interface ItemRepository extends CrudRepository<Item, Integer>
     {
     }
    ```
@@ -161,17 +161,17 @@ In this step, we'll connect the Spring Boot project with the MySQL database crea
    @RequestMapping("/item")
    public class ItemController{
 
-       final ItemsRepository itemsRepository;
+       final ItemRepository itemRepository;
 
 
-       public ItemController(@Autowired ItemsRepository itemsRepository )
+       public ItemController(@Autowired ItemRepository itemRepository )
        {
-           this.itemsRepository = itemsRepository;
+           this.itemRepository = itemRepository;
        }
 
        @GetMapping
        public Iterable<Item> getItems(){
-           return itemsRepository.findAll();
+           return itemRepository.findAll();
        }
    }
 
