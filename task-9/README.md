@@ -147,7 +147,7 @@ Now that we have defined the `ItemService` behavior and created an implementatio
    }
    ```
 
-. Implement a new function inside the `ItemController` to create a new Item using the `@PostMapping` annotation and the `@RequestBody` annotation to receive an `ItemDto` as parameter on the POST request. 5. Call the `itemService.save` to persist the item received in the request.
+5. Implement a new function inside the `ItemController` to create a new Item using the `@PostMapping` annotation and the `@RequestBody` annotation to receive an `ItemDto` as parameter on the POST request. 5. Call the `itemService.save` to persist the item received in the request.
 
 ```java
     @PostMapping
