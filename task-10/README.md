@@ -1,23 +1,26 @@
-# Task 10: Deleting Tasks
+# Task 10: Connecting the Frontend with the Backend
 
 ## Description
 
-Now that we are persisting tasks to `localStorage`, we need a way to delete old tasks so that they don't fill up the list over time.
+Now that we implmented the Frontend and the Backend of the final project, its time to connect these two layers.
 
 ## Walkthrough
 
-### Step 1: Add A Delete Button to the Task HTML
+### Step 1: Consuming the REST API with JavaScript
 
 > #### Useful Resources for this step
-> - [Bootstrap Buttons](https://getbootstrap.com/docs/4.5/components/buttons/)
+>
+> - [Using Fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
 
-In this step, we'll need to make sure we have a button on each of our tasks to delete the task.
+In this step, we'll use the Fetch API to consume the REST API endpoints.
 
 1. In `js/taskManager.js`, find the function `createTaskHtml`.
 2. In the returned HTML, add a `button` to delete the task, giving it a class `delete-button` that we will use later to check if the button was clicked.
 
 > #### Test Your Code!
+>
 > Now is a good chance to test your code, follow the steps below:
+>
 > 1. Open `index.html` in the browser and create a new task using the form.
 >
 > **Expected Result**
@@ -26,6 +29,7 @@ In this step, we'll need to make sure we have a button on each of our tasks to d
 ### Step 2: Create the deleteTask Method on TaskManager
 
 > #### Useful Resources for this step
+>
 > - [Loops and iteration](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration)
 
 Now we'll need a way to delete the task. For this, we'll create a `deleteTask` method on our `TaskManager` class.
@@ -40,14 +44,15 @@ For this step, we'll go with the second way. It's more _explicit_ and clear.
 1. In `js/taskManager.js`, create a `deleteTask` method on the `TaskManager` class. It should take one parameter, `taskId`, the id of the task we want deleted.
 2. In the `deleteTask` method, create an empty array and store it in a new variable, `newTasks`.
 3. Loop over the tasks, in the loop
-    - Get the current task in the loop, store it in a variable, `task`.
-    - Check if `task.id` is **not** equal to the `taskId` passed as a parameter.
-    - If the `task.id` is **not** equal to the `taskId`, push the `task` into the `newTasks` array.
+   - Get the current task in the loop, store it in a variable, `task`.
+   - Check if `task.id` is **not** equal to the `taskId` passed as a parameter.
+   - If the `task.id` is **not** equal to the `taskId`, push the `task` into the `newTasks` array.
 4. Set `this.tasks` to `newTasks`.
 
 ### Step 3: Setting an EventListener to the Delete Button on Tasks
 
 > #### Useful Resources for this step
+>
 > - [EventTarget.addEventListener()](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
 > - [Using Data Attributes](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes)
 
@@ -62,7 +67,7 @@ We'll be using the `delete-button` class we added to the buttons to find them. I
 5. Delete the task, passing the `taskId` to `taskManager.deleteTask()`
 6. Save the tasks to `localStorage` using `taskManager.save()`
 7. Render the tasks using `taskManager.render()`.
-    
+
 ## Results
 
 Open up `index.html` and add a task. Find the task in the Task List and click the delete button. The task should now be deleted!

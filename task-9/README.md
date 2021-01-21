@@ -75,8 +75,8 @@ In this step, we'll define our Service interface and create an implentation that
 
    ```
 
-   4. Implement the methods so you persist and retrieve your data using the `ItemRepository`.
-   5. Annotate the `ItemServiceMySQL` with `@Service` so it can be injected into the `ItemController`
+4. Implement the methods so you persist and retrieve your data using the `ItemRepository`.
+5. Annotate the `ItemServiceMySQL` with `@Service` so it can be injected into the `ItemController`
 
    > #### Test Your Code!
    >
@@ -89,14 +89,14 @@ In this step, we'll define our Service interface and create an implentation that
    > **Expected Result**
    > You should see that the `ItemService` variable is instantiated with the `ItemServiceMySQL`
 
-   ### Step 2: Connecting your ItemController with the ItemService
+### Step 2: Connecting your ItemController with the ItemService
 
-   Now that we have defined the `ItemService` behavior and created an implementation `ItemServiceMySQL` we can use this service to implement our REST API methods to fulfill the CRUD operations.
+Now that we have defined the `ItemService` behavior and created an implementation `ItemServiceMySQL` we can use this service to implement our REST API methods to fulfill the CRUD operations.
 
-   1. Inject `ItemService` inside the `ItemController`.
-   2. Modify the endpoint to retrieve the list of items to be `/item/all` and change the funciton implementation so it calls the `itemService.all()`
-   3. Create a new package inside the `controller` called `dto` for the Data Transfer Objects. This will represent the Java classes to map the JSON that data sent and received by the REST controller.
-   4. Add a new class called `ItemDto` inside the `dto` package.
+1. Inject `ItemService` inside the `ItemController`.
+2. Modify the endpoint to retrieve the list of items to be `/item/all` and change the funciton implementation so it calls the `itemService.all()`
+3. Create a new package inside the `controller` called `dto` for the Data Transfer Objects. This will represent the Java classes to map the JSON that data sent and received by the REST controller.
+4. Add a new class called `ItemDto` inside the `dto` package.
 
    ```java
    public class ItemDto
@@ -147,15 +147,16 @@ In this step, we'll define our Service interface and create an implentation that
    }
    ```
 
-4. Implement a new function inside the `ItemController` to create a new Item using the `@PostMapping` annotation and the `@RequestBody` annotation to receive an `ItemDto` as parameter on the POST request.
-5. Call the `itemService.save` to persist the item received in the request.
-   ```java
-       @PostMapping
-       public Item save( @RequestBody ItemDto itemDto )
-       {
-           return itemService.save( new Item( itemDto ) );
-       }
-   ```
+. Implement a new function inside the `ItemController` to create a new Item using the `@PostMapping` annotation and the `@RequestBody` annotation to receive an `ItemDto` as parameter on the POST request. 5. Call the `itemService.save` to persist the item received in the request.
+
+```java
+    @PostMapping
+    public Item save( @RequestBody ItemDto itemDto )
+    {
+        return itemService.save( new Item( itemDto ) );
+    }
+```
+
 6. Implement a new function inside the `ItemController` to retrive a specifc item using the item Id
    ```java
        @GetMapping("/{id}")
