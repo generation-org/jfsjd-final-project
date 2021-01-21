@@ -147,7 +147,9 @@ Now that we have defined the `ItemService` behavior and created an implementatio
    }
    ```
 
-5. Implement a new function inside the `ItemController` to create a new Item using the `@PostMapping` annotation and the `@RequestBody` annotation to receive an `ItemDto` as parameter on the POST request. 5. Call the `itemService.save` to persist the item received in the request.
+5. Implement a new function inside the `ItemController` to create a new Item using the `@PostMapping` annotation and the `@RequestBody` annotation to receive an `ItemDto` as parameter on the POST request. 
+
+6. Call the `itemService.save` to persist the item received in the request.
 
 ```java
     @PostMapping
@@ -157,14 +159,14 @@ Now that we have defined the `ItemService` behavior and created an implementatio
     }
 ```
 
-6. Implement a new function inside the `ItemController` to retrive a specifc item using the item Id
+7. Implement a new function inside the `ItemController` to retrive a specifc item using the item Id
    ```java
        @GetMapping("/{id}")
        public Item findItemById( @PathVariable Integer id ){
            return itemService.findById( id );
        }
    ```
-7. Implement the remaining CRUD methods using the `@PutMapping` to update an item and `@DeleteMapping` to delete an item.
+8. Implement the remaining CRUD methods using the `@PutMapping` to update an item and `@DeleteMapping` to delete an item.
 
    ```java
        @PutMapping( "/{id}" )
