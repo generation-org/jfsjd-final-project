@@ -95,7 +95,7 @@ Now that we have defined the `ItemService` behavior and created an implementatio
 
 1. Inject `ItemService` inside the `ItemController`.
 2. Modify the endpoint to retrieve the list of items to be `/item/all` and change the funciton implementation so it calls the `itemService.all()`
-3. Create a new package inside the `controller` called `dto` for the Data Transfer Objects. This will represent the Java classes to map the JSON that data sent and received by the REST controller.
+3. Create a new package inside the `controller` called `dto` for the Data Transfer Objects, these are Java classes used to map the JSON data structure sent and received by the REST controller.
 4. Add a new class called `ItemDto` inside the `dto` package.
 
    ```java
