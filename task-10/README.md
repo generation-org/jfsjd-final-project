@@ -52,7 +52,7 @@ In this step, we'll use the Fetch API to consume the save item endpoint.
 
 > #### Test Your Code!
 >
-> Now is a good chance to test your code, start your Server API and verify if the data is store correctly on the MySQL database.
+> Now is a good chance to test your code, start your Server API and verify if the data is stored correctly on the MySQL database.
 >
 > 1. Open `item-form.html` in the browser and create a new item using the form.
 >
