@@ -12,7 +12,7 @@ Now that we implmented the Frontend and the Backend of the final project, its ti
 >
 > - [Using Fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
 
-In this step, we'll use the Fetch API to consume the REST API endpoints.
+In this step, we'll use the Fetch API to consume the save item endpoint.
 
 1. In `js/ItemsController.js`, implement a new function called `save` that will POST the new item's data using the `fetch` function:
 
