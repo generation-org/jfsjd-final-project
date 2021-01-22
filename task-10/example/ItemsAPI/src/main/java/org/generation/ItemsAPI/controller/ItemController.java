@@ -4,6 +4,7 @@ import org.generation.ItemsAPI.controller.dto.ItemDto;
 import org.generation.ItemsAPI.repository.entity.Item;
 import org.generation.ItemsAPI.service.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -32,6 +33,7 @@ public class ItemController
         return itemService.all();
     }
 
+    @CrossOrigin
     @PostMapping
     public Item save( @RequestBody ItemDto itemDto )
     {
@@ -48,9 +50,9 @@ public class ItemController
     public Item update( @RequestBody ItemDto itemDto, @PathVariable Integer id )
     {
         Item item = itemService.findById( id );
-        item.setName( item.getName() );
-        item.setDescription( item.getDescription() );
-        item.setImageUrl( item.getImageUrl() );
+        item.setName( itemDto.getName() );
+        item.setDescription( itemDto.getDescription() );
+        item.setImageUrl( itemDto.getImageUrl() );
         return itemService.save( item );
     }
 

@@ -21,5 +21,30 @@ class ItemsController {
 
         //Save items to local storage
         localStorage.setItem("items", JSON.stringify(this.items));
+
+        this.uploadItem({name, description,imageUrl });
+    }
+
+    save({name, description, imageUrl}){
+        const data = { name,  description, imageUrl };
+
+        fetch('http://localhost:8080/item', {
+        method: 'POST', // or 'PUT'
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+        })
+        .then(response => response.json())
+        .then(data => {
+        console.log('Success:', data);
+        })
+        .catch((error) => {
+        console.error('Error:', error);
+        });
+    }
+
+    update({name, description, imageUrl}){
+        //TODO implement this method
     }
 }
