@@ -57,7 +57,7 @@ In this step, we'll use the Fetch API to consume the save item endpoint.
 > 1. Open `item-form.html` in the browser and create a new item using the form.
 >
 > **Expected Result**
-> You should the success message on the console log.
+> You should see the success message on the console log.
 
 ### Step 2: Consuming REST API
 
