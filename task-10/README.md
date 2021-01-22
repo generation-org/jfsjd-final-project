@@ -48,7 +48,7 @@ In this step, we'll use the Fetch API to consume the save item endpoint.
        }
    ```
 
-3. Add a call to the `uploadItem` function inside the scope of `addItem` function, you could call it after the items are stored on the `localStorage`.
+3. Add a call to the `uploadItem` function inside the scope of `addItem` function(you could call it after the items are stored on the `localStorage`).
 
 > #### Test Your Code!
 >
