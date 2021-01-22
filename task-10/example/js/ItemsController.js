@@ -47,4 +47,12 @@ class ItemsController {
     update({name, description, imageUrl}){
         //TODO implement this method
     }
+
+    delete(itemId){
+        //TODO implement this method
+    }
+
+    findById(itemId){
+        //TODO implement this method
+    }
 }
