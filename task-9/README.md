@@ -13,7 +13,7 @@ over your data model using the HTTP protocol.
 >
 > - [Spring Beans and Dependency Injection](https://docs.spring.io/spring-boot/docs/2.0.x/reference/html/using-boot-spring-beans-and-dependency-injection.html)
 
-In this step, we'll define our Service interface and create an implentation that handles the interaction with MySQL Database. An interface is a contract that good software developers use to define a component's behavior without worrying about the implementation.
+In this step, we'll define our Service interface and create an implentation that handles the interaction with MySQL Database. An interface is a structure or syntax that allows software developers to define a component's behavior without worrying about the implementation.
 
 1. Create a new package in your Spring Boot project called `service`
 2. Create the `ItemService` interface with the functions needed to implement the Items CRUD:
@@ -91,7 +91,7 @@ In this step, we'll define our Service interface and create an implentation that
 
 ### Step 2: Connecting your ItemController with the ItemService
 
-Now that we have defined the `ItemService` behavior and created an implementation `ItemServiceMySQL` we can use this service to implement our REST API methods to fulfill the CRUD operations.
+Now that we have defined the `ItemService` behavior and created an implementation `ItemServiceMySQL` - we can use this service to implement our REST API methods to fulfill the CRUD operations.
 
 1. Inject `ItemService` inside the `ItemController`.
 2. Modify the endpoint to retrieve the list of items to be `/item/all` and change the funciton implementation so it calls the `itemService.all()`
@@ -188,7 +188,7 @@ Now that we have defined the `ItemService` behavior and created an implementatio
 
 ## Results
 
-Start your server and test your Item's endpoint using any HTTP client like [Postman](https://www.postman.com/)
+Start your server and test your Item's endpoint using any HTTP client like [Postman](https://www.postman.com/) - [Example of how to send requests in postman](https://learning.postman.com/docs/sending-requests/requests/)
 
 ## Example
 
