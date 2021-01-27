@@ -39,7 +39,7 @@ In this step, we'll generate a Spring Boot project using the [spring initializr]
 
 In this step, we'll connect the Spring Boot project with the MySQL database created on [task 7](https://github.com/generation-org/jfsjd-final-project/tree/main/task-7).
 
-1. Make sure you created the database user and granted access to your database:
+1. Make sure you to create the database user and grant access to your database:
 
    ```bash
        mysql> create user 'admin'@'%' identified by 'passw0rd'; -- Creates the user
