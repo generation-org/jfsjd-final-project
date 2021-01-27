@@ -2,7 +2,7 @@
 
 ## Description
 
-Now that we implmented the Frontend and the Backend of the final project, its time to connect these two layers.
+Now that we have implemented the frontend and the backend of the final project, its time to connect these two layers.
 
 ## Walkthrough
 
@@ -48,7 +48,7 @@ In this step, we'll use the Fetch API to consume the save item endpoint.
        }
    ```
 
-3. Add a call to the `uploadItem` function inside the scope of `addItem` function(you could call it after the items are stored on the `localStorage`).
+3. Add a call to the `uploadItem` function inside the scope of `addItem` function (you could call it after the items are stored on the `localStorage`).
 
 > #### Test Your Code!
 >
@@ -76,11 +76,11 @@ Now that we have made the implementation of the `save` function to consume the `
 3. Test the `update` function(make sure you send an existing item id)
 4. Implement the `findItemById`
 5. Change your code so the save button calls the `findItemById` function.
-6. Popullate the itme's data into the corresponding form fields.
-7. Test the `findItemById` function(make sure you send an existing item id)
+6. Populate the item's data into the corresponding form fields.
+7. Test the `findItemById` function (make sure you send an existing item id)
 8. Implement the `delete` function.
 9. Change your code so the save button calls the `delete` function.
-10. Test the `delete` function(make sure you send an existing item id)
+10. Test the `delete` function (make sure you send an existing item id)
 
 ## Results
 
