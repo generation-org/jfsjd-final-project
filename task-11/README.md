@@ -88,9 +88,9 @@ public class ItemServiceMySQLTest
 > 1. Click the play button next to the method signature.
 >
 > **Expected Result**
-> You should see the tests all pass, green!
+> You should see the tests all pass, they will be colored green!
 
-8. Write the additional tests to verify the correct behaviour of the `ItemService` implementation: `ItemServiceMySQL`.
+8. Write additional tests to verify the correct behaviour of the `ItemService` implementation: `ItemServiceMySQL`.
 9. Create additional test classes to test your the other services of your application.
 
 ### Step 3: Testing your Controllers
@@ -99,7 +99,7 @@ In this step, we'll test the REST controllers of your API.
 
 Make sure to adjust any examples you reference to fit your code.
 
-1. Use what you have learnt on testing to unit test the following methods on the `ItemsController` class:
+1. Use what you have learnt to unit test the following methods on the `ItemsController` class:
 
 - `getItems`
 - `save`
@@ -112,7 +112,7 @@ Make sure to adjust any examples you reference to fit your code.
 
 ## Results
 
-Right click the test package and run All your test to see the Test Results pannel with all the green from the passed tests!
+Right click the test package and run all your test to see the Test Results pannel. If your tests were implemented correctly, you should see all green passed tests!
 
 ## Example
 
