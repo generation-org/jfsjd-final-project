@@ -39,7 +39,7 @@ In this step, we'll generate a Spring Boot project using the [spring initializr]
 
 In this step, we'll connect the Spring Boot project with the MySQL database created on [task 7](https://github.com/generation-org/jfsjd-final-project/tree/main/task-7).
 
-1. Make sure you to create the database user and grant access to your database:
+1. Make sure you create the database user and grant access to your database:
 
    ```bash
        mysql> create user 'admin'@'%' identified by 'passw0rd'; -- Creates the user
@@ -70,7 +70,7 @@ In this step, we'll connect the Spring Boot project with the MySQL database crea
 > **Expected Result**
 > Your application should start and connect with your database, no error should be displayed on the console.
 
-### Step 3: Interacting with your Database form Spring Boot Project
+### Step 3: Interacting with the Database form your Spring Boot Project
 
 1. Create new package called `repository.entity` and define the @Entity Model class:
 
