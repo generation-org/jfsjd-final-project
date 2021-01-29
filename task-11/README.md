@@ -11,17 +11,17 @@ In our final task, we'll test our Services and Controllers using JUnit and Mocki
 > #### Useful Resources for this step
 >
 > - [Mockito Framework](https://site.mockito.org/)
-> - [JUnit 5]https://junit.org/junit5/)
+> - [JUnit 5](https://junit.org/junit5/)
 
 In this step, we'll include the mockito framework dependency in the `build.gradle` file.
 
-1. Open the the `build.gradle` file and include the following dependency:
+1. Open the `build.gradle` file and include the following dependency:
 
 ```gradle
   	testCompile "org.mockito:mockito-core:3.7.7"
 ```
 
-2. Sync Gradle again and verify that dependency is downloaded and no errors occur.
+2. Sync Gradle again and verify that the dependency is downloaded and no errors occur.
 
 ### Step 2: Testing API Services
 
@@ -88,10 +88,10 @@ public class ItemServiceMySQLTest
 > 1. Click the play button next to the method signature.
 >
 > **Expected Result**
-> You should see the tests all pass, they will be colored green!
+> You should see all the tests pass, they will be colored green!
 
 8. Write additional tests to verify the correct behaviour of the `ItemService` implementation: `ItemServiceMySQL`.
-9. Create additional test classes to test your the other services of your application.
+9. Create additional test classes to test the other services of your application.
 
 ### Step 3: Testing your Controllers
 
@@ -108,7 +108,7 @@ Make sure to adjust any examples you reference to fit your code.
 - `delete`
 
 2. Implement additional unit test for other controllers of your application.
-   Hint: Make good use of verify method to check for mock interactions!
+   Hint: Make good use of the verify method to check for mock interactions!
 
 ## Results
 
