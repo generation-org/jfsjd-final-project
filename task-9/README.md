@@ -2,7 +2,7 @@
 
 ## Description
 
-In this task, we'll implement our REST API so you can perfomr the CRUD(Create, Read, Update and Delete) operations
+In this task, we'll implement our REST API so you can perform the CRUD(Create, Read, Update and Delete) operations
 over your data model using the HTTP protocol.
 
 ## Walkthrough
