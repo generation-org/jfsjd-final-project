@@ -1,4 +1,4 @@
-# Task 4: Adding Items(posts or products)
+# Task 4: Adding Items (posts or products)
 
 ## Description
 
