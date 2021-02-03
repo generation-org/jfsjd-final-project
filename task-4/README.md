@@ -5,7 +5,6 @@
 For this task, we'll be
 1. Creating a class to manage the items (products or posts)
 2. Adding a method to the class to keep track of items in our application
-3. Connecting up the New Item form to create items (products or posts).
 
 ## Walkthrough
 
