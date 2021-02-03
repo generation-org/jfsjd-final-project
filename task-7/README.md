@@ -96,4 +96,6 @@ In this step, we'll create the database Schema on your local instance of MySQL d
     > ```
     > **Expected Result**
     > You should see the schema created with the tables defined on the EER Diagram
+    > Take a screenshot of your schema and the EER Diagram. Name the file SchemaEER.jpg and create a folder for      
+    > screenshots of the project. 
     > ```
