@@ -1,4 +1,4 @@
-# Task 6: Creating New Items using the form
+# Task 6: Creating new items using the form
 
 ## Description
 
