@@ -126,28 +126,11 @@ Notice how each item has a unique `id`? We will be using this `id` in future ste
 > **Expected Result**
 > You should see an array containing the added item logged to the browser.
 
-### Step 4: Adding Items With The Form
-
-In this final step, we will use the `ItemsController` class to keep track of items we add with the **New Item** form.
-
-**Note**: For now, if your **New Item** form is on a separate page to your **Items List**, copy it over to your **Items List** so it's all on the one page.
-
-> #### Useful Resources for this step
-> - [Document.querySelector()](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)
-> - [EventTarget.addEventListener()](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
-> - [Event Reference](https://developer.mozilla.org/en-US/docs/Web/Events)
-
-1. Make sure a new `ItemsController` is initialized near the top of the file.
-2. In `index.js`, add an event listener to the **New Item** form, listening to the `submit` event. If there is already an event listener used for validation, use that one.
-3. When the `submit` event fires, if validation of the form is successful, use the values of each `input` in the form to call the `itemsController`'s `addItem` method.
-    - **Note**: Make sure to prevent the default action of the form!
-4. Clear the values from each form input, ready for the next submission.
-
 ## Results
 
-We've now set up the `ItemsController` class, create an `addItem` and hooked it up to our **New Item** form!
+We've now set up the `ItemsController` class, create an `addItem` and you are able to see the output on the browser console!
 
-Test out your code by adding some items using the **New Item** form, and checking the `ItemsController` instance's `items` array for the tasks.
+Test out your code by hardcoding items and checking the `ItemsController` instance's `items` array for the tasks.
 
 ## Example
 
