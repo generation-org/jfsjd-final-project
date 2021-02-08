@@ -23,7 +23,7 @@ In this step, we'll re-organise our folder structure in preparation for the next
 In this step, we'll create a `ItemsController` class that 
 will be responsible for managing the items(posts or products) in the application.
 
-Always aim to use meaningful and long names to make your code more readable. We encourage you to replace the word `Items` with a more meaninful one depending on your project domian:
+Always aim to use meaningful and long names to make your code more readable. We encourage you to replace the word `Items` with a more meaningful one depending on your project domain:
 * PostsController
 * ProductsController
 
@@ -31,7 +31,7 @@ Always aim to use meaningful and long names to make your code more readable. We 
 > - [ECMAScript 2015 Classes](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Inheritance#ECMAScript_2015_Classes)
 
 1. Create a `ItemsController` class in `js/itemsController.js`
-2. Within the `constructor` of the `ItemsController` class, initialize a `this.items` property on the class equal to an empty array.
+2. Within the `constructor` of the `ItemsController` class, initialize a `this.items` property on the class, Make the property equal to an empty array.
 
 > #### Test Your Code!
 > Now is a good chance to test your code, head over to `js/itemsController.js` and do the following
