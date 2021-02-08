@@ -15,6 +15,9 @@ The page will contain the following parts:
     
 ## Walkthrough
 
+### Step 0: Create a private GitHub repository
+Create a private GitHub repository that is shared among your groupmates and your instructor.
+
 ### Step 1: Create the page structure
 
 In this step, we'll create a basic HTML structure and include [Bootstrap](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
