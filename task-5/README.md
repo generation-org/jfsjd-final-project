@@ -10,7 +10,7 @@ For this task, we'll be creating the feature to display the objects list of the 
 
 ### Step 1: Define the item card layout
 
-In this step, we'll create the item represantation using the [card component](https://getbootstrap.com/docs/4.4/components/card/)
+In this step, we'll create the item representation using the [card component](https://getbootstrap.com/docs/4.4/components/card/)
 
 1. Read the documentation and understand how to use the [card components](https://getbootstrap.com/docs/4.4/components/card/)
 2. Define the HTML structure of the item card representation.
