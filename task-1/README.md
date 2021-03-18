@@ -36,11 +36,11 @@ you start designing. Ask the instructor if you have any questions!
 
 You should have implemented the different screens of your application, meeting the following **assesment criteria**:
 
-* There should be at minimum 5 pages: 
+* There should be at minimum 4 pages: 
   * Main page (Home)  - Static Page with App Presentation
   * About Us - Static Pages
   * Products / Posts List - Consumes API (POST and GET)
-  * Form Page (View / Update / Create / Delete)
+  * Form Page (View / Create) - Optional (Update // Delete)
 
 ## Example
 
