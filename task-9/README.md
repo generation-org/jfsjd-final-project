@@ -173,9 +173,9 @@ Now that we have defined the `ItemService` behavior and created an implementatio
        public Item update( @RequestBody ItemDto itemDto, @PathVariable Integer id )
        {
            Item item = itemService.findById( id );
-           item.setName( item.getName() );
-           item.setDescription( item.getDescription() );
-           item.setImageUrl( item.getImageUrl() );
+           item.setName( itemDto.getName() );
+           item.setDescription( itemDto.getDescription() );
+           item.setImageUrl( itemDto.getImageUrl() );
            return itemService.save( item );
        }
 
