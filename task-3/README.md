@@ -34,7 +34,7 @@ In this step, we'll create a basic HTML structure for the home page which includ
 > - [List group](https://getbootstrap.com/docs/4.5/components/list-group/)
 > - [Cards](https://getbootstrap.com/docs/4.5/components/card/)
 
-### Step 3: Implementing your Login page
+### Step 3: Implementing your Login page (Optional)
 
 1. Create a new file called `login.html` inside your project folder.
 2. Implement a basic login form.
