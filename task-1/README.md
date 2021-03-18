@@ -40,7 +40,6 @@ You should have implemented the different screens of your application, meeting t
   * Main page (Home)  - Static Page with App Presentation
   * About Us - Static Pages
   * Products / Posts List - Consumes API (POST and GET)
-  * Login
   * Form Page (View / Update / Create / Delete)
 
 ## Example
