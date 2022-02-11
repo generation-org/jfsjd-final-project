@@ -56,7 +56,7 @@ For example, pay attention to the two `items` objects below:
 //E-commerce project
 const product1 = {
     id: 1,
-    name: ''Tayto'',
+    name: 'Tayto',
     description: 'Cheese & Onion Chips',
     img: 'https://www.irishtimes.com/polopoly_fs/1.4078148!/image/image.jpg'
     createdAt: '2020-09-20'
@@ -64,7 +64,7 @@ const product1 = {
 
 const product2 = {
     id: 2,
-    name: ''Water'',
+    name: 'Water',
     description: 'Mineral water',
     img: 'http://www.mazalv.com/wp-content/uploads/2016/11/Bottled-Water1-979x1024-1-979x1024.png'
     createdAt: '2020-09-20'
